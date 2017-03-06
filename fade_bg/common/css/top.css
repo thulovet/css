@@ -1,0 +1,72 @@
+@charset "UTF-8";
+* {box-sizing: border-box;}
+
+.container {width: 960px; margin: 0 auto; max-width: 100%;}
+
+header {background: url('../../img/top/top_animation.jpg') no-repeat; background-size: cover; max-height: 700px;}
+
+header #h_pc {position: relative;}
+header #h_pc .light_bg {background: url('../../img/top/top_animation_02.jpg') no-repeat; background-size: cover; position: absolute; width: 100%; max-height: 700px;}
+
+/*table*/
+/*header #h_pc #mainVisual {position: absolute; z-index: 999; left: 0; right: 0; padding-top: 5%; text-align: center; display: table; }
+header #h_pc #mainVisual .fl {float: none; width: 35%; display: table-cell; vertical-align: middle; padding-right: 10%;}
+header #h_pc #mainVisual .fr {float: none; width: 60%; display: table-cell; vertical-align: middle;}*/
+
+/*flex*/
+header #h_pc #mainVisual {position: absolute; z-index: 999; left: 0; right: 0; padding-top: 5%; text-align: center; display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; -webkit-flex-direction: row; flex-direction: row; 	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+display: flex;}
+header #h_pc #mainVisual .fl {float: left; width: 35%;}
+header #h_pc #mainVisual .fr {float: right; width: 65%;}
+
+
+header #h_pc #mainVisual img{ max-width: 100%;}
+
+header #h_sp {display: none;}
+
+
+#menusp {display: none; background: #000;  }
+#menusp a:hover {opacity: 1;}
+#menusp #menu_list_btn {}
+#menusp #menu_list_btn {background:#000; position:relative; z-index: 9999;}
+#menusp #menu_list_btn ul li {float:left; width: 33.33%; }
+
+#menusp #menusp_content {display:none; width: 100%; background: #fff; font-size: 4vw; border-top: 2px solid #fff;}
+#menusp #menusp_content a {color: #fff; display:block; padding: 2vw 35px 2vw;}
+#menusp #menusp_content ul {background: #000; width: 100%;}
+#menusp #menusp_content ul li {text-align: center; border-bottom: 1px solid #fff;}
+#menusp #menusp_content ul li:last-child {border: 0;}
+#menusp #menusp_content  li a:hover, #menusp #menusp_content  li a.active{opacity:0.6;}
+
+/* ==================================
+		 MEDIA - REPONSIVE 
+===================================== */
+@media only screen and (max-width: 960px) {	
+	.container {width: 98%;}	
+}
+
+@media only screen and (max-width:640px){		
+	#menusp {position: fixed; width:100%; top:0; left:0; z-index:9999;}
+	header .h_pc {}
+
+	header .h_sp {display: none; text-align: center; position: relative;}
+	header .h_sp .light_bg_sp {background: url('../../img/top/top_animation_02.jpg') no-repeat; background-size: 100% 100%, cover; position: absolute; width: 100%; z-index: 999; }
+	header .h_sp .logo_sp {position: absolute; left: 0; right: 0; z-index: 999; width: 28%; margin: 0 auto; bottom: 38%; padding-top: 30%;}
+	header .h_sp .logo_txt_sp {position: absolute; left: 0; right: 0; z-index: 999; width: 70%; margin: 0 auto; bottom: 12%; padding: 20% 0;}
+	header .h_sp .btn_sp {position: absolute; left: 0; right: 0; z-index: 999; bottom: 0; padding-bottom: 12%;}
+
+}
+@media only screen and (max-width:480px){	
+	.h_sp .logo_sp {bottom: 38%;}
+	.h_sp .logo_txt_sp {bottom: 12%; padding: 20% 0;}
+	.h_sp .btn_sp {bottom: 0; padding-bottom: 12%;}
+}
+@media only screen and (max-width:320px){	
+	.wrapper #main #topNavi .part .caption {padding: 10px 5px;}
+	.h_sp .logo_sp {bottom: 38%; padding-top: 0;}
+	.h_sp .logo_txt_sp {bottom: 12%; padding: 20% 0;}
+	.h_sp .btn_sp {bottom: 0; padding-bottom: 12%;}
+}

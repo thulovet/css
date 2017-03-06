@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#location{}
+
+#locationMainImgWrap{background-color: #FFF;padding-top: 1px;}
+#locationMainImg{ background-repeat: no-repeat; background-position: center top; max-width: 1500px; margin: auto; }
+#locationMainImg ul li{float: left;}
+#locationMainImg ul li{ width:23.55%;}
+#locationMainImg ul li.txt{ width:5.8%;}
+
+#locationMainImg ul li img{ width:100%;}
+
+
+#locationInner{ background: url(../../img/common/bg_content01.png) repeat-x top; text-align: center;}
+
+#locationBox01{ padding: 90px 0 80px 0; text-align: center;}
+
+#locationBox02 {margin-bottom: 70px;}
+#locationBox02 ul{ display: flex; justify-content: center; margin-bottom: 20px;}
+#locationBox02 ul li{margin: 0 24px;}
+#locationBox02 ul li p{ font-size:10px; text-align: right;}
+
+#locationBox03 { max-width: 1500px; margin: 0 auto 50px auto; padding-top: 50px; }
+#locationBox03 #txtBox{ float: left; width: 47%; text-align: left; padding-top: 50px; margin-left: 2%;} 
+#locationBox03 #txtBox .tit{ padding-bottom: 10px; margin-bottom: 15px; }
+#locationBox03 #txtBox .tit img{  width:100%; max-width:631px;}
+#locationBox03 #mapBox{float: right; width: 47%;}
+#locationBox03 #mapBox img{ width:100%;}
+
+#locationBox03 #locaImgMini{padding-top: 30px;}
+#locationBox03 #locaImgMini ul{ display: flex; justify-content: center; margin-bottom: 20px;}
+#locationBox03 #locaImgMini ul li{ width:48%}
+#locationBox03 #locaImgMini ul li img{ width:100%}
+
+
+#locationBox03 #locaImgMini ul li:first-child{margin-right: 16px;}
+#locationBox03 #locaImgMini ul li p{ font-size: 10px; text-align: right; line-height: 1.4; }
+
+#areaInfomation{width:90%; margin: 0 auto 30px auto;}
+
+#locationBox04 { max-width: 1350px; margin: 0 auto 50px auto; padding-top: 50px; }
+
+#locationBox04 img{ width: 100%;}
+
+#locationBox04L {float: left; width:30%;}
+#locationBox04R {float: right; width:68%;}
+
+#locationBox04 p{ text-align: left; margin-bottom: 50px; }
+#locationBox04R ul{ display: flex; justify-content: center; }
+#locationBox04R ul li{margin-right:20px;}
+#locationBox04R ul li p{ font-size: 10px; text-align: right; line-height: 1.4;}
+
+#locationBox05 { max-width: 1300px; margin: 0 auto 50px auto; padding-top: 50px; }
+#locationBox05 ul li{float: left; margin: 0  30px 2% 0; width:23%; }
+#locationBox05 ul li img{ width:100%; }
+#locationBox05 ul li:nth-child(4n){float: left; margin: 0  0 20px 0;}
+#locationBox05 ul li p{ font-size: 10px; text-align: right; line-height: 1.4;}
+
+
+#areaInfoTit{ margin: auto; max-width: 99%; }
+
+#areaInfoTitMain{ border-bottom: 1px solid #ccc; padding-bottom: 8px;}
+#areaInfoTitSub{padding-top: 8px; margin-bottom: 50px;}
+
+.areaInfoBoxL{float: left; width: 32%; margin-right: 2%;}
+.areaInfoBoxR{float: right; width: 32%;}
+
+#areaInfomation .tit{margin-bottom: 15px; text-align: left;}
+
+#areaInfomation table {margin-bottom: 40px; font-size: 12px;}
+#areaInfomation table th{width:60%; padding:5px; border-bottom: dotted 1px #999;}
+#areaInfomation table td{text-align: right; padding:5px; border-bottom: dotted 1px #999;}
+
+#mainImgCap{ max-width:1300px; margin:auto;}
+
+#locationMainImgSp{display: none;}
+
+/* ==================================
+		 MEDIA - REPONSIVE 
+===================================== */
+@media only screen and (max-width:1330px){
+#locationBox02 ul li{width:30%; margin:0 1.667%;}
+#locationBox02 ul li img{width:100%;}
+
+#areaInfomation{width:98%;}
+
+
+
+}
+
+@media only screen and (max-width:1100px){
+#locationBox03{padding:0 1.667%;}
+#locationBox03 #txtBox{width:49%;}
+#locationBox03 #locaImgMini ul li img, #locationBox03 #mapBox img{max-width:100%;}
+#locationBox03 #locaImgMini ul li{width:49%;}
+#locationBox03 #locaImgMini ul li:first-child{margin-right:10px;}
+
+.areaInfoBoxL, .areaInfoBoxR{width:100%; margin:0; clear:both;}
+.areaInfoBoxChild{width:48%;}
+.areaInfoBoxChildL{float:left;}
+.areaInfoBoxChildR{float:right;}
+
+
+
+}
+
+@media only screen and (max-width:960px){
+#locationBox01{padding:70px 10px;}
+#locationBox05 ul li{float: left; margin: 0  30px 1% 0; width:22%; }
+
+
+}
+@media only screen and (max-width:768px){
+#locationBox03 #txtBox, #locationBox03 #mapBox{width:100%; float:none;}
+#locationBox03 #locaImgMini ul li{width:267px;}
+
+.areaInfoBoxChild{width:100%; float:none !important;}
+}
+
+@media only screen and (max-width:600px){	
+#locationBox03{padding:0 10px;}
+#locationBox03 #locaImgMini ul{display:inherit;}
+#locationBox03 #locaImgMini ul li:first-child, #locationBox03 #locaImgMini ul li{margin:0 auto 30px; float:none;}
+
+#areaInfomation{padding:0 10px; width:auto;}
+}
+	
+@media only screen and (max-width:480px){
+#locationBox01{padding:40px 10px;}
+
+#locationBox02 ul{display:inherit;}
+#locationBox02 ul li{width:100%; margin:0 0 30px;}
+#locationBox05 ul{margin-left: 20px;}
+#locationBox05 ul li{ width:46%; margin-right: 2%; min-height:190px;}
+#locationBox05 ul li:nth-child(even){margin-right: 0%;}
+
+#locationBox04{ padding: 10px;}
+#locationBox04L {float: none; text-align:center; width:100%;margin-bottom: 30px;}
+#locationBox04L img{ width:80%;}
+#locationBox04R {float: none; width:100%;}
+
+
+#locationBox03 { margin-bottom: 0;}
+
+#locationBox04 p{ margin-bottom: 10px;}
+
+
+#locationBox03 #txtBox{ float: none; width: 100%; text-align: left; padding-top: 50px; margin-left: 2%;} 
+#locationBox03 #txtBox .tit{ padding-bottom: 10px; margin-bottom: 15px; }
+#locationBox03 #txtBox .tit img{  width:100%; max-width:631px;}
+#locationBox03 #mapBox{float: none; width: 100%;}
+#locationBox03 #mapBox img{ width:100%;}
+
+#locationBox03 #locaImgMini{padding-top: 30px;}
+#locationBox03 #locaImgMini ul{ display: block; margin-bottom: 20px;}
+
+#locationBox03 #locaImgMini ul li:first-child{margin:0 auto 30px; float:left;}
+
+
+#locationBox03 #locaImgMini ul li{ width:47%; float: left; padding-right: 2%; margin-bottom: 10px;}
+#locationBox03 #locaImgMini ul li img{ width:100%}
+
+
+#locationBox04 {margin-bottom: 0;}
+#locationBox04 ul {margin-left: 10px;}
+
+
+#locationBox05 { max-width: 1300px; margin: 0 auto 50px auto; padding-top: 0px; }
+
+
+/*#areaInfomation table, #areaInfomation tbody, #areaInfomation tr, #areaInfomation th, #areaInfomation td{display:block;}*/
+/*#areaInfomation table th{width:auto; background:#9f9c88; color:#fff;}*/
+#areaInfomation table td{ font-size:11px;}
+#areaInfomation table th{width:auto; font-size:11px; }
+#areaInfomation table tr{margin-bottom:20px;}
+
+#locationMainImg{ display: none;}
+#locationMainImgSp{ display:block;}
+
+#locationBox05 {margin-bottom: 10px;}
+
+
+
+}

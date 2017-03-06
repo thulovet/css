@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<title>General Slide with Responsive</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- Jquery (Bxslider dung Jquery 1.8.2) -->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Bxslider -->
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/plugins/jquery.fitvids.js"></script>
+	<script src="js/plugins/jquery.easing.1.3.js"></script>
+
+	<!-- Common Js -->
+	<script src="js/common.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>General Css Slide</h1>
+		
+		<!-- Bxslider with caption -->
+		<div class="part">
+			<h2>Bxslider with Caption</h2>
+			<ul class="bxslider_caption">
+			  <li><img src="images/img01.jpg" title="The girl with red dress" /></li>
+			  <li><img src="images/img02.jpg" title="The camera in grass" /></li>
+			  <li><img src="images/img03.jpg" title="Sadness car in autumn" /></li>
+			</ul>
+		</div>
+
+		<!-- Bxslider Auto show with start / stop controls -->
+		<div class="part">
+			<h2>Bxslider with Start / Stop Controls</h2>
+			<ul class="bxslider_start_stop">
+			  <li><img src="images/img01.jpg" /></li>
+			  <li><img src="images/img02.jpg" /></li>
+			  <li><img src="images/img03.jpg" /></li>
+			</ul>
+		</div>
+
+		<!-- Bxslider Manual show without infinite loop -->
+		<div class="part">
+			<h2>Bxslider manual show without infinite loop. Không tự chạy không lặp </h2>
+			<ul class="bxslider_manual">
+			  <li><img src="images/img01.jpg" /></li>
+			  <li><img src="images/img02.jpg" /></li>
+			  <li><img src="images/img03.jpg" /></li>
+			</ul>
+		</div>
+
+		<!-- Bxslider using adaptiveHeight -->
+		<div class="part">
+			<h2>Bxslider using adaptiveHeight. Co theo chiều cao </h2>
+			<ul class="bxslider_adaptive">
+			  <li><img src="images/adaptive_height/img01.jpg" /></li>
+			  <li><img src="images/adaptive_height/img02.jpg" /></li>
+			  <li><img src="images/adaptive_height/img03.jpg" /></li>
+			</ul>
+		</div>
+
+		<!-- Bxslider Carousel Standard -->
+		<div class="part">
+			<h2>Bxslider Carousel Standard - Ở một số độ phân giải nào đó sẽ là 2 hình hoặc 3 hình hoặc một phần hình thứ 3 </h2>
+			<div class="carousel_standard">
+			  <div><img src="images/img01.jpg" /></div>
+			  <div><img src="images/img02.jpg" /></div>
+			  <div><img src="images/img03.jpg" /></div>
+			  <div><img src="images/img04.jpg" /></div>
+			  <div><img src="images/img05.jpg" /></div>
+			  <div><img src="images/img06.jpg" /></div>
+			</div>
+		</div>
+
+		<!-- Bxslider Carousel - Locked number of slide -->
+		<div class="part">
+			<h2>Bxslider Carousel - Locked number of slide - Luôn hiển thị 2 image mặc dù ở bất cứ màn hình nào </h2>
+			<div class="carousel_lock">
+			  <div><img src="images/img01.jpg" /></div>
+			  <div><img src="images/img02.jpg" /></div>
+			  <div><img src="images/img03.jpg" /></div>
+			  <div><img src="images/img04.jpg" /></div>
+			  <div><img src="images/img05.jpg" /></div>
+			  <div><img src="images/img06.jpg" /></div>
+			</div>
+		</div>
+		
+		<!-- Bxslider Carousel - Too large slideWidth -->
+		<div class="part">
+			<h2>Bxslider Carousel - Too large slideWidth. Ở đây chúng ta cố ý thiết lập một slideWidth lớn hơn so với không gian có sẵn. Trong trường hợp này, giá trị mặc định trượt với giá trị minSlide và cân một cách thích hợp.</h2>
+			<div class="carousel_toolarge">
+			  <div><img src="images/img01.jpg" /></div>
+			  <div><img src="images/img02.jpg" /></div>
+			  <div><img src="images/img03.jpg" /></div>
+			  <div><img src="images/img04.jpg" /></div>
+			  <div><img src="images/img05.jpg" /></div>
+			  <div><img src="images/img06.jpg" /></div>
+			</div>
+		</div>
+
+		<!-- Bxslider Carousel - Move number of slides (moveSlides) -->
+		<div class="part">
+			<h2>Bxslider Carousel - Move number of slides. Mỗi lần nhấn prev / next di chuyển sẽ di chuyển theo tham số "moveSlides" được cung cấp (1 là trượt 1 slide, 2 là trượt 2 slides). Mặc định hiển thị bao nhiêu là trượt bấy nhiêu. </h2>
+			<div class="carousel_moveslide">
+			  <div><img src="images/img01.jpg" /></div>
+			  <div><img src="images/img02.jpg" /></div>
+			  <div><img src="images/img03.jpg" /></div>
+			  <div><img src="images/img04.jpg" /></div>
+			  <div><img src="images/img05.jpg" /></div>
+			  <div><img src="images/img06.jpg" /></div>
+			</div>
+		</div>
+		
+		<!-- Bxslider Carousel - Infinite carousel with odd number of slides -->
+		<div class="part">
+			<h2>Bxslider Carousel - Infinite carousel with odd number of slides. Chúng ta có 10 slide thì sẽ di chuyển 1 lần 3 slide. Đến slide thứ 09 sẽ hiện thị luôn 3 slide 09 01 02. Tiếp tục start từ đầu 01 02 03.</h2>
+			<div class="carousel_odd">
+			  <div><img src="images/img01.jpg" /></div>
+			  <div><img src="images/img02.jpg" /></div>
+			  <div><img src="images/img03.jpg" /></div>
+			  <div><img src="images/img04.jpg" /></div>
+			  <div><img src="images/img05.jpg" /></div>
+			  <div><img src="images/img06.jpg" /></div>
+			  <div><img src="images/img07.jpg" /></div>
+			  <div><img src="images/img08.jpg" /></div>
+			  <div><img src="images/img09.jpg" /></div>
+			  <div><img src="images/img10.jpg" /></div>
+			</div>
+		</div>
+
+		<!-- Bxslider Carousel - Start on a different slide -->
+		<div class="part">
+			<h2>Bxslider Carousel - Start on a different slide. </h2>
+			<div class="carousel_different">
+			  <div><img src="images/img01.jpg" /></div>
+			  <div><img src="images/img02.jpg" /></div>
+			  <div><img src="images/img03.jpg" /></div>
+			  <div><img src="images/img04.jpg" /></div>
+			  <div><img src="images/img05.jpg" /></div>
+			  <div><img src="images/img06.jpg" /></div>
+			</div>
+		</div>
+
+		<!-- Bxslider Carousel - Not enough slides -->
+		<div class="part">
+			<h2>Bxslider Carousel - Not enough slides. </h2>
+			<div class="carousel_notenough">
+			  <div><img src="images/img01.jpg" /></div>
+			  <div><img src="images/img02.jpg" /></div>
+			</div>
+		</div>	
+
+		<!-- Bxslider Carousel - Vertical carousel -->
+		<div class="part">
+			<h2>Bxslider Carousel - Vertical carousel </h2>
+			<div class="carousel_vertical">
+			  <div><img src="images/img01.jpg" /></div>
+			  <div><img src="images/img02.jpg" /></div>
+			  <div><img src="images/img03.jpg" /></div>
+			  <div><img src="images/img04.jpg" /></div>
+			  <div><img src="images/img05.jpg" /></div>
+			  <div><img src="images/img06.jpg" /></div>
+			</div>
+		</div>
+
+		<!-- Bxslider Carousel - Static number of slides -->
+		<div class="part">
+			<h2>Bxslider Carousel - Static number of slides. Tham số minSlides = maxSlides. Luôn thể hiên đúng số image trên 1 slide </h2>
+			<div class="carousel_static">
+			  <div><img src="images/img01.jpg" /></div>
+			  <div><img src="images/img02.jpg" /></div>
+			  <div><img src="images/img03.jpg" /></div>
+			  <div><img src="images/img04.jpg" /></div>
+			  <div><img src="images/img05.jpg" /></div>			  
+			</div>
+		</div>	
+
+		<!-- Bxslider Carousel - Dynamic number of slides -->
+		<div class="part">
+			<h2>Bxslider Carousel - Dynamic number of slides. Tham số minSlides = maxSlides. Luôn thể hiên đúng số image trên 1 slide </h2>
+			<div class="carousel_dynamic">
+			  <div><img src="images/img01.jpg" /></div>
+			  <div><img src="images/img02.jpg" /></div>
+			  <div><img src="images/img03.jpg" /></div>
+			  <div><img src="images/img04.jpg" /></div>
+			  <div><img src="images/img05.jpg" /></div>
+			  <div><img src="images/img06.jpg" /></div>	
+			  <div><img src="images/img07.jpg" /></div>
+			  <div><img src="images/img08.jpg" /></div>
+			  <div><img src="images/img09.jpg" /></div>
+			  <div><img src="images/img10.jpg" /></div>		  
+			</div>
+		</div>
+
+		<!-- Bxslider Thumbnail Pager - Method 1 -->
+		<div class="part">
+			<h2>Bxslider Thumbnail Pager - Method 1 </h2>
+			<ul class="bxslider_pager01">
+				<li><img src="images/img01.jpg" alt=""></li>
+				<li><img src="images/img02.jpg" alt=""></li>
+				<li><img src="images/img03.jpg" alt=""></li>
+				<li><img src="images/img04.jpg" alt=""></li>
+				<li><img src="images/img05.jpg" alt=""></li>
+				<li><img src="images/img06.jpg" alt=""></li>
+				<li><img src="images/img07.jpg" alt=""></li>
+				<li><img src="images/img08.jpg" alt=""></li>
+				<li><img src="images/img09.jpg" alt=""></li>
+				<li><img src="images/img10.jpg" alt=""></li>
+			</ul>			
+			<ul id="bx_pager_thumb01">
+				<li><a data-slide-index="0" href=""><img src="images/thumb01.jpg" width="100%" /></a></li>
+				<li><a data-slide-index="1" href=""><img src="images/thumb02.jpg" width="100%" /></a></li>
+				<li><a data-slide-index="2" href=""><img src="images/thumb03.jpg" width="100%" /></a></li>
+				<li><a data-slide-index="3" href=""><img src="images/thumb04.jpg" width="100%" /></a></li>
+				<li><a data-slide-index="4" href=""><img src="images/thumb05.jpg" width="100%" /></a></li>
+				<li><a data-slide-index="5" href=""><img src="images/thumb06.jpg" width="100%" /></a></li>	
+				<li><a data-slide-index="6" href=""><img src="images/thumb07.jpg" width="100%" /></a></li>
+				<li><a data-slide-index="7" href=""><img src="images/thumb08.jpg" width="100%" /></a></li>
+				<li><a data-slide-index="8" href=""><img src="images/thumb09.jpg" width="100%" /></a></li>
+				<li><a data-slide-index="9" href=""><img src="images/thumb10.jpg" width="100%" /></a></li>		  
+			</ul>
+		</div>
+
+		<!-- Bxslider Thumbnail Pager - Method 2 -->
+		<div class="part" id="bxslider_pager02">
+			<h2>Bxslider Thumbnail Pager - Method 2. Sử dụng switch case để điều khiển img thumb. Phải viết riêng 1 đoạn CSS cho thuộc tính bx-pager.</h2>
+			<ul class="bxslider_pager02">
+				<li><img src="images/img01.jpg" alt=""></li>
+				<li><img src="images/img02.jpg" alt=""></li>
+				<li><img src="images/img03.jpg" alt=""></li>
+				<li><img src="images/img04.jpg" alt=""></li>
+				<li><img src="images/img05.jpg" alt=""></li>
+			</ul>						
+		</div>
+
+		<!-- Bxslider Custom next / prev control selectors -->
+		<div class="part">
+			<h2>Bxslider Custom next / prev control selectors</h2>
+			<ul class="bxslider_custom">
+				<li><img src="images/img01.jpg" alt=""></li>
+				<li><img src="images/img02.jpg" alt=""></li>
+				<li><img src="images/img03.jpg" alt=""></li>
+				<li><img src="images/img04.jpg" alt=""></li>
+				<li><img src="images/img05.jpg" alt=""></li>
+			</ul>
+			<div class="outside">
+				<p><span id="slider-prev"></span> | <span id="slider-next"></span></p>
+			</div>
+		</div>
+
+		<!-- Bxslider Thumbnail Pager - Method 2 -->
+		<div class="part">
+			<h2>Bxslider Public method. 2 hàm goToNextSlide() và getSlideCount() </h2>
+			<ul class="bxslider_method">
+				<li><img src="images/img01.jpg" alt=""></li>
+				<li><img src="images/img02.jpg" alt=""></li>
+				<li><img src="images/img03.jpg" alt=""></li>
+				<li><img src="images/img04.jpg" alt=""></li>
+				<li><img src="images/img05.jpg" alt=""></li>
+			</ul>
+			<p>
+				<a href="" id="slider-next-02">Click me to go to the next slide</a><br>
+				<a href="" id="slider-count">Click me to see the total slide count</a>
+			</p>
+		</div>
+
+		<!-- Bxslider Responsive Video -->
+		<div class="part">
+			<h2>Bxslider Responsive Video. Phải sử dụng plugins/jquery.fitvids.js</h2>
+			<ul class="bxslider_video">
+				<li><iframe width="" height="" src="https://www.youtube.com/embed/z2eLl_WA7CQ" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe></li>
+				<li><img src="images/img01.jpg" alt=""></li>
+				<li><img src="images/img02.jpg" alt=""></li>
+				<li><img src="images/img03.jpg" alt=""></li>				
+			</ul>			
+		</div>
+
+		<!-- Bxslider Ticker mode -->
+		<div class="part">
+			<h2>Bxslider Ticker mode. Muốn speed chậm đi, cần tăng thuộc tính speed lên</h2>
+			<ul class="bxslider_ticker">				
+				<li><img src="images/thumb01.jpg" alt=""></li>
+				<li><img src="images/thumb02.jpg" alt=""></li>
+				<li><img src="images/thumb03.jpg" alt=""></li>
+				<li><img src="images/thumb04.jpg" alt=""></li>
+				<li><img src="images/thumb05.jpg" alt=""></li>
+				<li><img src="images/thumb06.jpg" alt=""></li>
+				<li><img src="images/thumb07.jpg" alt=""></li>
+				<li><img src="images/thumb08.jpg" alt=""></li>
+				<li><img src="images/thumb09.jpg" alt=""></li>
+				<li><img src="images/thumb10.jpg" alt=""></li>
+			</ul>			
+		</div>
+
+		<!-- Bxslider Custom easing -->
+		<div class="part">
+			<h2>Bxslider Custom easing. Nới lỏng các tùy chỉnh khác. Phải thêm thư viện plugins/jquery.easing.1.3.js</h2>
+			<ul class="bxslider_custom_easing">				
+				<li><img src="images/img01.jpg" alt=""></li>
+				<li><img src="images/img02.jpg" alt=""></li>
+				<li><img src="images/img03.jpg" alt=""></li>
+				<li><img src="images/img04.jpg" alt=""></li>
+				<li><img src="images/img05.jpg" alt=""></li>
+				<li><img src="images/img06.jpg" alt=""></li>
+				<li><img src="images/img07.jpg" alt=""></li>
+				<li><img src="images/img08.jpg" alt=""></li>
+			</ul>			
+		</div>
+		<!-- Bxslider Reload slider -->
+		<div class="part">
+			<h2>Bxslider Reload Slider</h2>
+			<ul class="bxslider_reload">				
+				<li><img src="images/img01.jpg" alt=""></li>
+				<li><img src="images/img02.jpg" alt=""></li>
+				<li><img src="images/img03.jpg" alt=""></li>
+				<li><img src="images/img04.jpg" alt=""></li>
+			</ul>	
+			<p><a href="" id="reload-slider">Click to add a slide, then reload the slider</a></p>		
+		</div>
+
+		<!-- Bxslider Reload slider with new setttings -->
+		<div class="part">
+			<h2>Bxslider Reload slider with new settings</h2>
+			<ul class="bxslider_reload_02">				
+				<li><img src="images/img01.jpg" alt=""></li>
+				<li><img src="images/img02.jpg" alt=""></li>
+				<li><img src="images/img03.jpg" alt=""></li>
+				<li><img src="images/img04.jpg" alt=""></li>
+			</ul>	
+			<p><a href="" id="reload-slider-02">Click to reload slider with new settings</a></p>		
+		</div>
+
+		<div class="part">
+			<h2>The end </h2>				
+		</div>
+
+
+
+
+	</div>
+</body>
+</html>

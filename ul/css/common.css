@@ -1,0 +1,37 @@
+.container {width: 960px; margin: 0 auto;}
+a {display: block; color: #fff;}
+h1 {font-size: 20px; padding: 2% 0; color: darkblue;}
+
+#type01 {}
+#type01 ul { background: #333; padding: 2% 2% 0; }
+#type01 ul li {float: left; width: 32%; margin: 0 2% 2% 0;  text-align: center; background: rgba(0,0,0,0.3);}
+#type01 ul li:nth-child(3n) {margin-right: 0;}
+
+#type02 {}
+#type02 ul { background: lightblue; }
+#type02 ul li {float: left;}
+#type02 ul li:nth-child(1) {width: 32%; margin-right: 2%;}
+#type02 ul li:nth-child(2) {width: 66%;}
+#type02 ul li:nth-child(2) ul li {width: 48.5%;}
+#type02 ul li:nth-child(2) ul li:nth-child(1) {margin-right: 3%;}
+#type02 ul li:nth-child(2) ul li:nth-child(2) {margin-right: 0;}
+
+
+@media only screen and (max-width: 960px) {
+	.container { width: 100%; }
+}
+
+@media only screen and (max-width: 640px) {
+	#type01 ul li {width: 49%; margin-right: 2% !important; }
+	#type01 ul li:nth-child(2n) {margin-right: 0 !important; }
+}
+
+@media only screen and (max-width: 480px) {
+
+	#type02 ul li {width: 100% !important; margin: 0 0 2% 0;}
+	#type02 figure {text-align: center;}
+}
+
+@media only screen and (max-width: 320px) {
+	
+}

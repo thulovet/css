@@ -1,0 +1,4 @@
+* {box-sizing: border-box; }
+ul, li {margin: 0; padding: 0; list-style: none;}
+.part {margin-bottom: 5%;}
+.hover_opacity img:hover {opacity: 0.8;}

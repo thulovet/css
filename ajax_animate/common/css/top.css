@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#mainVisualWrapper img { width:auto; max-width:100%; height:auto; }
+#mainVisualWrapper {  overflow:hidden; position:relative; }
+#mainVisual { width:100%; max-width:1300px; margin:0 auto 0 auto; position:relative; z-index:20; }
+#mainVisual #mainVisual00 { position:relative; z-index:50; opacity:0; }
+#mainVisual #petal01 { position:absolute; z-index:200; top:2.14%; right:17.46%; width:38.84%; display:none; }
+#mainVisual #petal02 { position:absolute; z-index:200; top:24.23%; left:22.46%; width:46.76%; display:none; }
+#mainVisual #petal03 { position:absolute; z-index:200; top:5.40%; right:13.53%; width:38.84%; display:none; }
+#mainVisual #movieText01 { position:absolute; z-index:200; top:8.19%; width:4.15%; left:47.93%; display:none; }
+#mainVisual #petal04 { position:absolute; z-index:200; top:30.24%; left:10.61%; width:46.76%; display:none; }
+#mainVisual #petal05 { position:absolute; z-index:250; top:0; left:0; width:100%; display:none; }
+
+#mainVisual #petal07 { position:absolute; z-index:180; top:0; left:0; width:100%; display:none; }
+
+#mainVisual #movieImage { position:absolute; z-index:200; top:0; left:0; width:100%; display:none; }
+#mainVisual #movieText02 { position:absolute; z-index:300; top:0%; left:3.01%; width:31%;  display:none; }
+
+#mainVisual #mainVisual01 { position:absolute; z-index:100; }
+#mainVisual #mainVisual02 { position:absolute; z-index:90; }
+#mainVisual #mainVisual03 { position:absolute; z-index:80; }
+#mainVisual #mainVisual04 { position:absolute; z-index:70; }
+
+#mainVisual #petal_01 { position:absolute; z-index:200; top:27.40%; right:17.53%; width:33.69%; display:none; }
+#mainVisual #petal_02 { position:absolute; z-index:200; top:30.79%; right:34.07%; width:45.15%; display:none; }
+#mainVisual #petal_03 { position:absolute; z-index:200; top:12.06%; right:40.07%; width:43.38%; display:none; }
+#mainVisual #petal_04 { position:absolute; z-index:200; top:5.73%; right:36.61%; width:55.61%; display:none; }
+#mainVisual #petal_05 { position:absolute; z-index:200; top:52.22%; right:6.84%; width:38.92%; display:none; }
+#mainVisual #petal_06 { position:absolute; z-index:200; top:35.27%; right:59.76%; width:30.46%; display:none; }
+
+#mainVisual #outviewTitle { position:absolute; display:none; z-index:600; margin:0; background:url(../../img/top/tit_outview_01.png) center top no-repeat; top:90px; width:100%; left:0; height:260px; }
+#mainVisual #outviewImg { position:absolute; width:100%; height:100%; bottom:0; left:0; background:url(../../img/top/img_outview_01.png) center bottom no-repeat; display:none; z-index:500; }
+
+#mainVisualWhite { width:100%; height:100%; position:absolute; top:0; left:0; background:#fff url(../../img/top/bg_outview_01.png) center no-repeat; background-size:cover; z-index:15; opacity:0; }
+#mainVisualBlack { width:100%; height:100%; position:absolute; top:0; left:0; background:#000; z-index:10; }
+
+
+
+/* ==================================
+		 MEDIA - REPONSIVE 
+===================================== */
+@media only screen and (max-width:1300px) {
+#mainVisual #outviewTitle { top:10.48%; width:15.38%; left:42.31%; background-size:contain; }	
+#mainVisual #outviewImg { background-size:100% auto; }
+}
+
+@media only screen and (max-width:736px){
+#mainVisualWrapper { display:none !important; }
+}
+
+@media only screen and (max-width:480px){
+ #mainVisualWrapper{display:none;}
+}

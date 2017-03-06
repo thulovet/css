@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* COMMON CSS Document */
+
+* {box-sizing: border-box; -moz-box-sizing: border-box;}
+
+/*HEADER
+====================================*/
+#header{}
+
+/*NAVIGATION
+====================================*/
+#gnav{}
+
+/*MAIN CONTENT
+====================================*/
+.container{margin: 0 auto; width: 960px;}
+.part {margin: 0 auto 10px; border: 1px solid #333; width: 640px; position: relative; font-size: 20px;}
+.part a {text-decoration: none; display: block;}
+.part a:hover {opacity: 0.6;}
+
+
+/*===============================
+             Type 01
+================================*/
+/*#type01 #menusp {position: fixed; width: inherit; }*/
+#type01 #menusp {}
+#type01 #menusp .list_btn ul li {float: left; width: 33%; margin-right: 0.5%; background: #064578; text-align: center; padding: 10px 0;}
+#type01 #menusp .list_btn ul li:last-child {margin-right: 0; }
+
+#type01 #menusp .list_content {display: none;}
+#type01 #menusp .list_content ul {background: #064578; }
+#type01 #menusp .list_content ul li {padding: 10px 20px; border-top: 1px solid #fff; text-align: center; }
+
+/*===============================
+             Type 02
+================================*/
+#type02 #menusp {}
+#type02 #menusp .list_btn ul li {float: left; width: 33%; margin-right: 0.5%; background: #0c6e93; text-align: center; padding: 10px 0;}
+#type02 #menusp .list_btn ul li:last-child {margin-right: 0;}
+
+#type02 #menusp .list_content {display: none;}
+#type02 #menusp .list_content ul {background: #0c6e93;}
+#type02 #menusp .list_content ul li {padding: 10px 20px; border-top: 1px solid #fff; text-align: center; }
+
+#type02 #btn_menu {position: relative; width:34px; height: 34px; display: block; margin: 0 auto; }
+#type02 #btn_menu span {display: block; position: absolute; width: 100%; background:#fff; height: 2px; margin: 0; left:0; transition:all 0.5s ease-in-out;}
+#type02 #btn_menu span:nth-of-type(1) { top:0; }
+#type02 #btn_menu span:nth-of-type(2) { top:50%; }
+#type02 #btn_menu span:nth-of-type(3) { bottom:0; }
+
+#type02 #btn_menu.active span:nth-of-type(1) { -webkit-transform: rotate(-225deg); transform: rotate(-225deg); top:50%; margin:-1px 0 0 0; }
+#type02 #btn_menu.active span:nth-of-type(2) { opacity:0; }
+#type02 #btn_menu.active span:nth-of-type(3) {  -webkit-transform: rotate(225deg); transform: rotate(225deg); bottom:50%; margin:0 0 -1px 0; }
+
+/*===============================
+             Type 03
+================================*/
+#type03 #menusp {}
+#type03 #menusp .list_btn ul li {float: left; width: 33%; margin-right: 0.5%; background: #438acc; text-align: center; padding: 10px 0;}
+#type03 #menusp .list_btn ul li:last-child {margin-right: 0;}
+
+#type03 #menusp .list_content {display: none; background: #333; padding: 50px 50px; }
+#type03 #menusp .list_content ul {background: #438acc; }
+#type03 #menusp .list_content ul li {padding: 10px 20px; border-top: 1px solid #fff; text-align: center; }
+
+#type03 #btn_menu {position: relative; width: 34px; height: 34px; display: block; margin: 0 auto; }
+#type03 #btn_menu span {display: block; position: absolute; width: 100%; background:#fff; height: 2px; margin: 0; left:0; transition:all 0.5s ease-in-out;}
+#type03 #btn_menu span:nth-of-type(1) { top:0; }
+#type03 #btn_menu span:nth-of-type(2) { top:50%; }
+#type03 #btn_menu span:nth-of-type(3) { bottom:0; }
+
+#type03 #btn_menu.active span:nth-of-type(1) { -webkit-transform: rotate(-225deg); transform: rotate(-225deg); top:50%; margin:-1px 0 0 0; }
+#type03 #btn_menu.active span:nth-of-type(2) { opacity:0; }
+#type03 #btn_menu.active span:nth-of-type(3) {  -webkit-transform: rotate(225deg); transform: rotate(225deg); bottom:50%; margin:0 0 -1px 0; }
+
+/*===============================
+             Type 04
+================================*/
+#type04 #menusp {}
+#type04 #menusp .list_btn ul li {float: left; width: 33%; margin-right: 0.5%; background: #79a7e2; text-align: center; padding: 10px 0;}
+#type04 #menusp .list_btn ul li:last-child {margin-right: 0;}
+
+#type04 #menusp .list_content {display: none; background: #333; padding: 50px 50px;}
+#type04 #menusp .list_content ul {background: #79a7e2; }
+#type04 #menusp .list_content ul li {padding: 10px 20px; border-top: 1px solid #fff; text-align: center; }
+
+#type04 #btn_menu {position: relative; width: 34px; height: 34px; display: block; margin: 0 auto; }
+#type04 #btn_menu span {display: block; position: absolute; width: 100%; background:#fff; height: 2px; margin: 0; left:0; transition:all 0.5s ease-in-out;}
+#type04 #btn_menu span:nth-of-type(1) { top:0; }
+#type04 #btn_menu span:nth-of-type(2) { top:50%; }
+#type04 #btn_menu span:nth-of-type(3) { bottom:0; }
+
+#type04 #btn_menu.active span:nth-of-type(1) { -webkit-transform: rotate(-225deg); transform: rotate(-225deg); top:50%; margin:-1px 0 0 0; }
+#type04 #btn_menu.active span:nth-of-type(2) { opacity:0; }
+#type04 #btn_menu.active span:nth-of-type(3) {  -webkit-transform: rotate(225deg); transform: rotate(225deg); bottom:50%; margin:0 0 -1px 0; }
+
+/*===============================
+             Type 05
+================================*/
+#type05 #menusp {position: relative; }
+#type05 #menusp .list_btn ul li {float: left; width: 33%; margin-right: 0.5%; background: #9dc1f1; text-align: center; padding: 10px 0;}
+#type05 #menusp .list_btn ul li:last-child {margin-right: 0;}
+
+#type05 #menusp .list_content {display: none; position: absolute; right: 0; width: 50%; margin: 30px 0 0; z-index: 999;}
+#type05 #menusp .list_content ul {background: #9dc1f1;}
+#type05 #menusp .list_content ul li {border-top: 1px solid #fff; text-align: center; }
+
+#type05 #btn_menu {position: relative; width:34px; height: 34px; display: block; margin: 0 auto; }
+#type05 #btn_menu span {display: block; position: absolute; width: 100%; background:#fff; height: 2px; margin: 0; left:0; transition:all 0.5s ease-in-out;}
+#type05 #btn_menu span:nth-of-type(1) { top:0; }
+#type05 #btn_menu span:nth-of-type(2) { top:50%; }
+#type05 #btn_menu span:nth-of-type(3) { bottom:0; }
+
+#type05 #btn_menu.active span:nth-of-type(1) { -webkit-transform: rotate(-225deg); transform: rotate(-225deg); top:50%; margin:-1px 0 0 0; }
+#type05 #btn_menu.active span:nth-of-type(2) { opacity:0; }
+#type05 #btn_menu.active span:nth-of-type(3) {  -webkit-transform: rotate(225deg); transform: rotate(225deg); bottom:50%; margin:0 0 -1px 0; }
+
+
+
+
+
+/*FOOTER
+===================================*/
+#footer{}
+
+/*===============================
+             MEDIA
+================================*/
+@media only screen and (max-width:960px){
+
+}
+
+@media only screen and (max-width:768px){
+
+}
+
+@media only screen and (max-width:640px){
+	.container {width: 100%; font-size: 14px;}
+	.part {width: 100%;}
+}
+
+@media only screen and (max-width:480px){
+
+}
+
+@media only screen and (max-width:360px){
+
+}

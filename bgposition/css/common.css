@@ -1,0 +1,23 @@
+.wrapper {margin: 0 auto;}
+.container {width: 960px; margin: 0 auto;}
+
+#part01 {
+	background-image: url('../img/img02.jpg'); 
+	background-position: bottom center;     
+	background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    text-align: center;
+    height: 796px;          
+}
+
+#part01 p {line-height: 796px;}
+
+#part02 {
+	background-image: url('../img/img03.jpg');	 
+	background-position: bottom center;     
+	background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 796px; 
+}

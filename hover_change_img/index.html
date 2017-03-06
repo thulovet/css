@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>hover img</title>
+<!-- CSS -->
+<link rel="stylesheet" href="common/css/default.css">
+<link rel="stylesheet" href="common/css/common.css">
+
+<!-- JAVASCRIPT -->
+<script src="common/js/jquery.js"></script>
+<script src="common/js/common.js"></script>
+</head>
+<script>
+    $(window).load(function(){
+        var h = $('.map img').height();
+        $('#area').css('height', h);
+    });
+    $(window).resize(function(){
+       var h = $('.map img').height();
+        $('#area').css('height', h); 
+    })
+</script>
+
+<script>
+    $(window).load(function(){
+        //Hover 
+        $('.btn01').mouseover(function(){
+            $('.map img:not(#change01)').removeClass('active');
+            $('#change01').addClass('active');
+        }).mouseout(function(){
+            $('.map img:not(#source)').removeClass('active');       
+        });
+        $('.btn02').mouseover(function(){
+            $('.map img:not(#change02)').removeClass('active');
+            $('#change02').addClass('active');
+        }).mouseout(function(){
+            $('.map img:not(#source)').removeClass('active');       
+        });
+
+       //Click
+       $('.btn01').click(function(){
+            $('.lightbox:not(#lbox01)').removeClass('active');
+            $('#lbox01').addClass('active');
+       });
+       $('.btn02').click(function(){
+            $('.lightbox:not(#lbox02)').removeClass('active');
+            $('#lbox02').addClass('active');
+
+       });
+
+    });    
+</script>
+
+<body>
+    <div class="container"> 
+        <div id="area">
+            <div class="boxl">
+                <ul>
+                    <li class="btn01">Button 01</li>
+                    <li class="btn02">Button 02</li>                    
+                </ul>
+            </div>
+            <div class="boxr">
+                <div class="map">
+                    <img src="img/source.jpg" alt="THE MAJESTY COURT MEGURO" id="source">
+                    <img src="img/map_01.jpg" alt="MEGURO AREA目黒エリア" id="change01">
+                    <img src="img/map_02.jpg" alt="SHIROKANEDAI AREA白金台エリア" id="change02">                    
+                </div>
+                <div class="box_outer">
+                    <div class="btnclose">x</div>
+                    <div class="lightbox" id="lbox01">
+                        <p>Nesciunt, enim magni tempore, illum culpa quae mollitia, dolores ipsum, id voluptas dolor. Ab, expedita mollitia tempora! </p>    
+                        <img src="img/map_01_lb.jpg" alt="">
+                    </div>
+                    <div class="lightbox" id="lbox02">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati delectus dolorum nihil consequuntur!</p>    
+                        <img src="img/map_02_lb.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>  
+            <div class="clear"></div>             
+        </div>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos accusamus aliquid doloremque, fugiat dignissimos nulla expedita eum saepe illum nobis maxime quis, nesciunt facilis deserunt, porro asperiores quod sapiente sint quia cupiditate a? Similique modi, obcaecati iure vel voluptas sunt necessitatibus unde iste animi. Blanditiis quo ipsum veritatis minus eaque quia ea expedita aperiam est enim doloremque, ad, necessitatibus aliquam sit eius ipsa neque delectus iusto, debitis autem illum, saepe mollitia. Voluptates aliquam error omnis, recusandae nulla. Facere aspernatur architecto maiores minima molestiae autem repellendus, officiis atque assumenda maxime alias excepturi. Maxime suscipit cum explicabo, ipsam voluptatem est nam, pariatur.</p>
+        </div>     
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+.container { width: 960px; margin: 0 auto; }
+h1 {font-size: 100px;}
+h2 {color: #04409b;}
+blockquote p {font-size: 12px; }
+@font-face {
+	font-family: League-Gothic;
+	src: url("../fonts/LeagueGothic-Regular.otf");
+}
+@font-face {
+	font-family: Museo;
+	src: url("../fonts/Museo300-Regular.otf");
+}
+@font-face {
+	font-family: Frankin;
+	src: url("../fonts/Franklin Gothic Heavy Regular.ttf");
+}
+@font-face {
+	font-family: BazarMedium;
+	src: url("../fonts/Bazar.ttf");
+}
+@font-face {
+	font-family: ChunkFive;
+	src: url("../fonts/Chunk.ttf");
+}
+
+/*Using CSS Text-Shadow to Create Cool Text Effects*/
+
+.bg {padding: 50px;}
+.retro {text-shadow: 5px 5px 0px #eee, 7px 7px 0px #707070; color: #717171; font-family: League-Gothic;}
+.neon {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de; color: #FFF; font-family: Museo;}
+.inset {text-shadow: 0px 2px 3px #666; color: #222; font-family: League-Gothic;}
+.anaglyphic {text-shadow: 8px 8px 0 rgba(255,0,180,0.5); color:#8094ed; font-family: League-Gothic;}
+.fire {text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; color: #fff; font-family: League-Gothic;}
+.boardgame {text-shadow: 10px 10px 0 #ffd217, 20px 20px 0 #5ac7ff, 30px 30px 0 #ffd217, 40px 40px 0 #5ac7ff; color:#fff; font-family: League-Gothic;}
+
+/*8 css 3 text-shadow effects at The MegaMag*/
+
+/*12 Fun CSS Text Shadows You Can Copy and Paste*/
+#text12 .bg h1{font-family: Frankin;}
+.basic {text-shadow: 2px 4px 3px rgba(0,0,0,0.3); color: #fff; font-family: League-Gothic;}
+.letterpress {text-shadow: 2px 2px 3px rgba(255,255,255,0.1); color: rgba(0,0,0,0.6); font-family: League-Gothic;}
+.hard {text-shadow: 6px 6px 0px rgba(0,0,0,0.2); color: #fff;}
+.double {text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15); color: #333;}
+.down {    
+	text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+	color: #fff;
+}
+.closeheavy {
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+	color: #fff;
+}
+.littelhelp {
+	text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+	color:#fff;              
+}
+.trueinset {	
+	background-color: #666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+.glowing {text-shadow: 0px 0px 6px rgba(255,255,255,0.7); color: #fff;}
+.superhero {
+	text-shadow: -10px 10px 0px #00e6e6,
+                 -20px 20px 0px #01cccc,
+                 -30px 30px 0px #00bdbd;
+	color: #fff;                 
+}
+.multiplelight {
+	text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+	color: #fff;                 
+}
+.softemboss {
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+	color: rgba(0,0,0,0.6);
+}
+
+/*7 Great CSS based text effects using the text-shadow property*/
+#text07 .bg h1 {font-family: Frankin;}
+.cloudy {
+	text-shadow: 0px 0px 10px rgba(255,255,255,0.6), 0px 0px 30px rgba(255,255,255,0.4), 0px 0px 50px rgba(255,255,255,0.3), 0px 0px 180px rgba(255,255,255,0.3);
+	color: rgba(255,255,255,0);
+}
+.emboss {text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;  opacity: 0.3; color: #9c8468;}
+.retrobazar { text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72; font-family: BazarMedium; letter-spacing: 10px; color: #d7ceb2;}
+#text07 .bg .text3d {text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135; font-family: ChunkFive; color: #fff;}

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#masterplan{}
+
+#masterplanMainImgOuter{ background-color: black;}
+
+#masterplanMainImg{ background-image: url(../../img/masterplan/bg_main.jpg); background-repeat: no-repeat; background-position: center center; }
+
+#masterplanMainImgInner{ max-width:1500px; min-height:590px; margin:auto;}
+
+#masterplanMainImgInner .txtBox{ padding-top: 6%; width: 50%; background-image: url(../../img/masterplan/bg_right_block.png); background-repeat: no-repeat; background-position: center top; text-align: center; float: right;}
+
+#masteplanInner{ background: url(../../img/common/bg_content01.png) repeat-x top; text-align: center;}
+
+
+
+#masterplanBox01{ text-align:center; margin-bottom: 100px;padding-top: 60px;}
+#masterplanBox02{  margin: 0 auto 30px auto; width:1300px;}
+
+#masterplanBox02L{float: left; width:50%;}
+#masterplanBox02R{float: right; width:50%; text-align:left;}
+#masterplanBox02R .tit{margin-bottom: 20px;}
+#designerBox{ padding-top: 30px; }
+
+
+#masterplanBox03{ max-width:1300px; margin:0 auto 30px auto; }
+
+#masterplanBox03 ul { display: flex; justify-content: center;}
+#masterplanBox03 ul li {margin: 0 5px;}
+#masterplanBox03 ul li p{text-align:right; font-size:10px;}
+
+#masterplanMainImgOuter{}
+#mainImgSp{display: none;}
+
+/* ==================================
+		 MEDIA - REPONSIVE 
+===================================== */
+@media only screen and (max-width:1300px){
+	
+#masterplanBox02{ width:100%; padding:10px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+#masterplanBox02 img{ width:100%;}
+
+#masterplanBox03{ width:100%; margin:0 auto 30px auto;  max-width:100%; }
+#masterplanBox03 ul { display:block;}
+#masterplanBox03 ul li {float: left; width:11.5%;}
+#masterplanBox03 ul li img { width:100%;}
+
+
+	}
+@media only screen and (max-width:960px){
+#masterplanMainImgInner{ max-width:100%; min-height:auto; margin:auto;}
+#masterplanMainImg{ background-size:cover}
+#masterplanMainImgInner .txtBox img{  width: 3%;}
+#masterplanMainImgInner .txtBox { padding-top: 2%; }
+
+#masterplanBox03 ul { display:block;}
+#masterplanBox03 ul li {margin: 0 5px;}
+#masterplanBox03 ul li p{text-align:right; font-size:10px;}
+
+
+}
+
+@media only screen and (max-width:480px){
+	#masterplanMainImgOuter{ display:none;}
+	#mainImgSp{display: block;}
+	
+	#masterplanBox02L{float:none; width:100%;}
+#masterplanBox02R{float: none; width:100%;}
+
+#masterplanBox03 ul li { width:47%;}
+
+
+
+
+}

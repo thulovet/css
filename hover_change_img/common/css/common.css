@@ -1,0 +1,22 @@
+.container {width: 960px; margin: 0 auto;}
+
+#area {margin: 50px 0;}
+#area .boxl {float: left; width: 35%;}
+#area .boxl ul li {background: #ebebeb; margin-bottom: 5px; padding: 10px; transition: ease-in-out 0.2s; box-shadow: }
+#area .boxl ul li:hover {background-color: coral;}
+
+#area .boxr {float: right; width: 60%; position: relative;}
+#area .boxr .map {}
+#area .boxr .map img {position: absolute; transition: all ease-in-out 1s; opacity: 0; left: 0; right: 0; margin: 0 auto;}
+#area .boxr .map img.active {opacity: 1;}
+#area .boxr .map #source{z-index:40; opacity: 1;}
+#area .boxr .map #change01{z-index:90;}
+#area .boxr .map #change02{z-index:80;}
+
+#area .boxr .btnclose {position: absolute; top: 0; right: 0;}
+#area .boxr .lightbox {position: absolute; z-index: 100; background: rgba(0,0,0,0.5); color: #fff; padding: 5%; left: 0; right: 0; margin: 0 auto; width: 50%; opacity: 0; transition: all ease-in-out 1s; }
+#area .boxr .lightbox.active {opacity: 1;}
+
+@media only screen and (max-width: 960px) {
+	.container {width: 98%;}
+}

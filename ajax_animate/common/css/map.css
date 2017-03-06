@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header{padding-bottom:15px;}
+h1{ font-size: 10px; line-height: 100%; padding: 5px 0 10px 85px; padding-top: 5px; padding-right: 0; padding-left: 102px; padding-bottom: 10px; position: relative; }
+#logo{ float: left; position: relative; padding-left: 20px; }
+/*#logo li{padding-right:7px; float:left;}
+#logo li.first{padding-right:16px !important;}
+*/
+.fl{float:left;}
+.fr{float:right;}
+#pop_wrap {
+    margin: 0 auto;
+    width: 650px;
+}
+.pop_head {
+    padding: 19px 0;
+}
+.pop_r{ float: right; padding-top: 10px; }
+
+.pop_r ul li{ float: left; margin-left: 5px;}
+
+.pop_btn{ padding-top: 15px; width: 240px; margin-top: 0; margin-right: auto; margin-left: auto; margin-bottom: 15px; }
+.pop_ftright{text-align:right;}
+.pop_btn img { padding-top: 0; padding-right: 5px; padding-left: 5px; padding-bottom: 0; 
+}
+.btnReq { text-align: center; padding-top: 30px; }
+.btnReq img{ margin-bottom: 10px;}
+
+
+.mapTel{ text-align:center; padding:15px; border-top: solid 1px #ccc; border-bottom: solid 1px #ccc;}
+
+
+#pop_wrap #logo{
+    width:350px;
+	text-align:left;
+	float:left;
+	padding-left:20px;
+}
+
+#pop_wrap .telBox{ text-align: center; margin: 20px auto; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;  width: 630;  padding: 10px;}
+#pop_wrap .telBox .txt_01{ margin-right: 15px; display:inline-block}
+#pop_wrap .telBox .txt_02{display:inline-block}
+#pop_wrap .telBox .toiawaseTxt{ margin-bottom: 10px; }
+
+#pop_wrap .telBox span{ margin-right: 20px; display: inline-block;}
+
+@media only print{
+	
+	.pop_btn{display: none;}
+	.pop_head {   padding: 0 0 5px 0;}
+	#pop_wrap .telBox{ text-align: center; margin: 5px auto; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;  width: 630;  padding: 5px;}
+
+	#plan_main{width:85%; margin:auto}
+	#plan_main img{width:100%;}
+	
+	}
+
+/*===============================
+			 MEDIA
+================================*/
+@media only screen and (max-width:650px){
+#pop_wrap {
+    margin: 0 auto;
+    width:auto; padding:0 10px;
+}
+#pop_wrap #logo{padding-left:0px; width:auto; float:none;}
+.pop_head {
+    padding: 3% 0;
+}
+
+.pop_r{float:right;}
+.pop_btn{padding-top:4%;}
+
+.pop_ft div{float:none !important;}
+}
+
+
+

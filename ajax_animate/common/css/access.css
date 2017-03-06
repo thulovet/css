@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#access{}
+
+#accessMainImg{ background: url(../../img/access/bg_access_main.jpg); max-width: 100%; margin: auto;}
+#accessMainImgInner{ max-width: 1300px; margin: auto;}
+#bigShibuya{float: left; width: 47%;}
+#bigKichijoji{float: right; width: 47%;}
+
+#titMain{float: left; width: 6%; text-align: center;}
+#bigShibuya img,#bigKichijoji img{width: 100%}
+#titMain img{ width: 100%; max-width:71px;}
+
+#acessInner{ background: url(../../img/common/bg_content01.png) repeat-x top; text-align: center;}
+
+#accessBox1{margin-bottom: 50px; padding-top: 50px;}
+
+#accessBox2{margin: 0 auto 30px auto; max-width: 1200px; padding: 10px 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+
+#accessBox3 ul{ display: flex; justify-content: center; margin-bottom: 20px;}
+#accessBox3 ul li{ margin: 0 20px;}
+#accessBox4{margin-bottom: 50px;}
+
+/* ==================================
+		 MEDIA - REPONSIVE 
+===================================== */
+@media only screen and (max-width:1020px){
+#accessBox3 ul li{width:30%; margin:0 1.667%;}
+#accessBox3 ul li img{max-width:100%;}
+
+#acessInner{padding:0 10px;}
+}
+
+@media only screen and (max-width:736px){
+#accessBox3 ul{display:inherit;}	
+#accessBox3 ul li{width:100%; margin:0 0 30px;}
+}
+
+@media only screen and (max-width:480px){
+#accessBox1{padding-top:30px; margin-bottom:30px;}
+}

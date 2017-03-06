@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#concept{ background: url(../../img/concept/main_bg_concept.jpg); background-size: cover; }
+
+#conceptInner{ max-width: 1300px; margin: auto; background-color: #fff; }
+#conceptInner img { }
+
+#conceptMain{ z-index: 5;}
+
+
+#copyWrap{ width: 90%; margin: auto;  z-index: 100; }
+#copyWrap #txtBox{ margin-top: 70px; text-align: center; }
+#copyWrap #txtBox .tit{ margin-bottom: 30px; }
+
+#copyWrap #mapBox{float: right; width: 35%}
+
+.mainCopy{ text-align: center; padding-bottom: 150px; }
+
+#kizonjuWrap{ max-width: 1100px; margin-top: 0; margin-right: auto; margin-left: auto; padding-bottom: 80px; }
+#kizonjuWrapL{ float: left; width: 36.5%; padding: 40px; border: 1px solid #dad0c7; }
+#kizonjuWrapL img{ margin-bottom: 30px; margin-top: 10px; }
+#kizonjuWrapL p{line-height:2;}
+
+#kizonjuWrapR{float: right; width:55%;}
+#kizonjuWrapR img{width:100%; max-width:568px;}
+
+#conceptMainSp{ display:none}
+
+
+/* ==================================
+		 MEDIA - REPONSIVE 
+===================================== */
+@media only screen and (max-width:960px){
+#conceptInner{height:auto; padding-bottom:200px;}
+
+#copyWrap{width:98%; left:1%;}
+
+#kizonjuWrap{ width:100%;}
+#kizonjuWrapL{width:45%; padding:2%}
+#kizonjuWrapR{width:48%; max-width:568px;}
+
+
+}
+
+@media only screen and (max-width:768px){
+#conceptInner{padding-bottom:30px;}	
+
+#copyWrap{position:static; width:auto; padding:0 30px;}
+#copyWrap #txtBox{width:100%; float:none; margin:0 0 20px;}
+#copyWrap #mapBox{width:100%; text-align:center; float:none;}
+#copyWrap #txtBox img, #copyWrap #mapBox img{width:auto;}
+}
+
+@media only screen and (max-width:736px){
+#copyWrap{padding:0 20px;}	
+}
+
+@media only screen and (max-width:480px){
+#copyWrap{padding:0 10px; }	
+#kizonjuWrap{padding: 10px; box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+#kizonjuWrapR{float: none; width:100%; padding:10px; text-align:center;  box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; height:200px; margin-bottom: 0px;}
+#kizonjuWrapL{ float: none; width: 100%; padding: 15px; border: 1px solid #dad0c7; box-sizing:  border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; min-height:200px; font-size:12px;}
+#kizonjuWrapL img{ width:100%;}
+.mainCopy{ padding-bottom: 20px; }
+
+#conceptMain{display: none;}
+#conceptMainSp{display: block;}
+
+}
+@media only screen and (max-width:375px){
+#copyWrap #txtBox .tit{margin-bottom:25px;}
+}

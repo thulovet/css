@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+a:hover {opacity: 0.8;}
+.container{margin: 0 auto; width: 960px;}
+#click {background: coral;}
+#click li {display: inline-block; margin: 0 15px 15px 0;}
+
+/*fancybox*/
+.univerbox{max-width:940px; width:100%; display:none;}
+.univerboxl{width:40.63%; float:left;}
+.univerboxr{width:53.125%; float:right; margin-right:2%; padding:20px 0;}
+.univerboxr span{background:#000; color:#fff; padding:5px 10px; display:inline-block;}
+.univerboxr .tit1{font-size:24px;}
+.univerboxr .tit2{font-size:20px;}
+.univerboxr .row1{margin-bottom:5px;}
+.univerboxr .row2{margin-bottom:10px;}
+.univerboxr .row3{color:#8f8f8f; font-size:16px; padding-left:10px;}
+.univerboxr .box{border:1px solid #cfcfcf; padding:20px 10px 10px; font-size:16px; line-height:1.7;}
+.univerboxr .box li{margin-bottom:10px;}
+.univerboxr .question{color:#555555;}
+.univerboxr .answer{padding-left:27px; color:#000;}
+
+/*===============================
+             MEDIA
+================================*/
+@media only screen and (max-width:960px){
+  .container {width: 100%;}
+}
+@media only screen and (max-width:640px){
+  .univerinfo{float:none; clear:both; width:100%; margin:0 auto;}
+  .univerboxr .answer{padding-left:20px;}
+}

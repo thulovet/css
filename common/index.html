@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<title>Common</title>
+	<!-- Css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- Js -->
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+		<h1>Common CSS with jQuery</h1>
+
+		<div class="part">
+			<h2>01. Img Over. Khi hover vào image sẽ đổi sang khác và mouseover thì trả lại bình thường. </h2>
+			<p>
+				<img src="img/menu01.jpg" alt="" class="imgover">
+			</p>
+		</div>
+
+		<div class="part">
+			<h2>02. Đổi hình khi độ phân giải nhỏ hơn 736px (2 class img736 736px, img480 480px)</h2>
+			<p>
+				<img src="img/img01.jpg" alt="" class="img480 img736" width="100%">
+			</p>
+		</div>
+
+		<div class="part">
+			<h2>03. Hover vào thay đổi opacity. Mở Lightbox (áp dụng default.css và pop.css) </h2>
+			<p class="hover_opacity">
+				<a href="javascript:void(0);" onclick="MM_openBrWindow('lightbox/type_a/type_a.html','','scrollbars=yes,resizable=yes,width=750')">
+					<img src="img/btn01.jpg" alt="">
+				</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

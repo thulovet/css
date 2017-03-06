@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+#quality{background:url(../../img/quality/bg.gif) repeat-x top left; padding:55px 0 50px;}
+#qualityNav{width:790px; max-width:90%; margin:0 auto;}
+#qualityNav li{float:left;}
+#qualityNav li.last{float:right;}
+#qualityIn{background:url(../../img/quality/bg02.png) no-repeat top center; padding-top:50px;}
+#subNav{padding-bottom:55px;}
+#subNav li.last{margin-right:0 !important;}
+#subNav li a:hover{opacity:0.8;}
+.qualityTit{background:#9a8b56; margin-bottom:20px; border-bottom:3px solid #b4ab8b; height:42px; width:100%; display:table;}
+.qualityTit p{vertical-align:middle; display:table-cell; padding-left:16px; line-height:1;}
+#quality .note{font-size:10px; line-height:1.4;}
+#quality .note02{font-size:11px; line-height:1.4;}
+
+/* Index -Equipment */
+.equipment #subNav li{width:23.4375%; float:left; margin-right:2.0833%;}
+.equipment .box{padding-bottom:20px;}
+.equipment .boxChild{width:23.4375%; float:left; margin-right:2.0833%; margin-bottom:20px;}
+.equipment .boxChild.last{margin-right:0;}
+.equipment .img{margin-bottom:10px;}
+.equipment .tit{margin-bottom:6px; padding-bottom:6px; border-bottom:1px solid #ccc;}
+.equipment .note{font-size:10px; line-height:1.4;}
+
+/* Safety */
+.safety #subNavsp{display:none;}
+.safety #subNav li{width:32.0833%; float:left; margin-right:1.87505%;}
+.safety .box{width:48.958%; float:left; margin-bottom:35px;}
+.safety .box.last{float:right; margin-bottom:0;}
+.safety .boxChild{width:47.872%; float:left; margin-bottom:30px;}
+.safety .boxChild.last{float:right;}
+.safetyImg{margin-bottom:10px;}
+.safetyTit01{margin-bottom:25px;}
+.safetyTit02{margin-bottom:6px; padding-bottom:6px; border-bottom:1px solid #ccc;}
+.safetyTxt01{margin-bottom:35px;}
+
+.foundation .boxImg{position:relative; padding-right:115px;}
+.foundation .boxNote{position:absolute; bottom:0; right:0; width:100px; font-size:11px; line-height:1.3;}
+.foundation .boxNote .note{padding-top:10px;}
+
+.security .box01{margin-bottom:30px; padding-right:144px; position:relative;}
+.security .box01 .img{position:absolute; top:0; right:0; width:124px; font-size:11px; line-height:1.4;}
+.security .box01 .img p{padding-top:5px;}
+.security .box02 img{margin-bottom:5px;}
+
+.measures .box01 li{width:23.404%; float:left; margin-right:2.128%; margin-bottom:15px;}
+.measures .box01 li.last{margin-right:0;}
+.measures .txt01{margin-bottom:15px;}
+.measures .txt02{padding-top:10px;}
+.measures .img{margin-bottom:10px;}
+/* ==================================
+		 MEDIA - REPONSIVE 
+===================================== */
+@media only screen and (max-width:960px){
+#quality{padding:30px 0;}
+#qualityNav li{width:46%;}
+#qualityIn{padding-top:30px;}
+}
+
+@media only screen and (max-width:480px){
+#quality{padding:15px 0 30px;}	
+#qualityIn{padding-top:15px;}
+#qualityNav li{width:49%;}	
+#subNav{padding-bottom:15px;}	
+
+.equipment #subNav li{width:49%; margin-right:2%; margin-bottom:2%;}
+.equipment #subNav li:nth-child(2){margin-right:0;}
+.equipment .boxChild{width:49%; margin-right:2%;}
+.equipment .boxChild:nth-child(2n){margin-right:0;}
+.equipment .boxChild:nth-child(2n+1){clear:both;}
+
+.safety #subNav{display:none;}
+.safety #subNavsp{display:block; padding-bottom:15px;}
+.safety #subNavsp li{width:49%; margin-right:2%; margin-bottom:2%; float:left;}
+.safety #subNavsp li:nth-child(2){margin-right:0;}
+
+.safety .box{width:100%; float:none !important;}
+.safety .boxChild{width:49%;}
+.safety .boxChild:nth-child(2n+1){clear:both;}
+}
+
+@media only screen and (max-width:414px){
+#qualityNav{max-width:94%;}		
+}
+
+@media only screen and (max-width:375px){
+#qualityNav li{width:100%; float:none; margin-bottom:10px;}
+	
+.safetyTit01{margin-bottom:15px;}
+.safetyTxt01{margin-bottom:20px;}
+
+.foundation .boxImg{padding:0;}
+.foundation .boxNote{position:static; width:100%; padding:20px 10px 0; box-sizing:border-box;}
+
+.security .box01{padding:0;}
+.security .box01 .img{position:static; padding-top:20px;}
+
+.measures .box01{width:240px; margin:0 auto;}
+.measures .box01 li{width:110px; margin-right:20px;}
+.measures .box01 li:nth-child(2){margin-right:0;}
+.measures .txt02{padding-top:0;}
+}
